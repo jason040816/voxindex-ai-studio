@@ -1,0 +1,295 @@
+/* Shared responsive rules. Page-specific styles remain in their own files. */
+
+html,
+body,
+#root {
+  width: 100%;
+  min-width: 0;
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  min-width: 0;
+}
+
+img,
+svg,
+video,
+audio {
+  max-width: 100%;
+}
+
+button,
+input,
+textarea,
+select {
+  max-width: 100%;
+  font: inherit;
+}
+
+.mobile-menu-button {
+  display: none;
+  width: 42px;
+  height: 42px;
+  flex: 0 0 auto;
+  padding: 9px;
+  border: 1px solid #cfe2f5;
+  border-radius: 10px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.mobile-menu-button span {
+  display: block;
+  height: 2px;
+  margin: 4px 0;
+  border-radius: 2px;
+  background: #1677d2;
+}
+
+@media (max-width: 780px) {
+  .navbar {
+    position: sticky;
+    min-height: 64px;
+    padding: 8px 14px;
+    gap: 0.6rem;
+  }
+
+  .navbar-brand {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  .navbar-logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .brand-name-zh {
+    font-size: 1.1rem;
+  }
+
+  .brand-name-en {
+    display: none;
+  }
+
+  .mobile-menu-button {
+    display: block;
+  }
+
+  .navbar-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    z-index: 30;
+    align-items: stretch;
+    gap: 0.2rem;
+    margin: 0;
+    padding: 10px 14px 16px;
+    border-bottom: 1px solid #dcecf9;
+    background: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 14px 24px rgba(31, 96, 160, 0.12);
+  }
+
+  .navbar-links.is-open {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar-links a,
+  .navbar-link-btn,
+  .language-toggle {
+    width: 100%;
+    min-height: 42px;
+    padding: 10px 12px;
+    border-radius: 9px;
+    text-align: left;
+  }
+
+  .navbar-links a:hover,
+  .navbar-link-btn:hover,
+  .language-toggle:hover {
+    background: #eff7ff;
+  }
+
+  .navbar-register {
+    text-align: center !important;
+  }
+
+  .navbar-profile {
+    flex: 0 0 auto;
+    margin-left: 0;
+  }
+
+  .profile-dropdown {
+    right: -4px;
+    max-width: calc(100vw - 28px);
+  }
+
+  .page-container {
+    width: 100%;
+    margin: 1rem auto;
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+
+  .auth-container {
+    min-height: calc(100vh - 64px);
+    padding: 1rem 12px;
+  }
+
+  .auth-card {
+    padding: 1.25rem;
+  }
+
+  .daxi-dashboard,
+  .daxi-history,
+  .clone-page,
+  .daxi-synth,
+  .admin-page,
+  .profile-container,
+  .register-container {
+    width: 100%;
+    max-width: 100%;
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+
+  .daxi-dashboard-hero,
+  .daxi-history-hero,
+  .clone-hero,
+  .daxi-synth-hero {
+    padding: 1.25rem;
+    border-radius: 16px;
+  }
+
+  .daxi-dashboard-actions,
+  .clone-grid,
+  .daxi-synth-grid,
+  .admin-overview-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .clone-hero,
+  .daxi-synth-hero,
+  .daxi-history-toolbar,
+  .admin-panel-header,
+  .profile-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .clone-hero-link,
+  .daxi-synth-link,
+  .clone-submit,
+  .btn-save,
+  .btn-login,
+  .btn-register {
+    width: 100%;
+    text-align: center;
+  }
+
+  .clone-card,
+  .daxi-card,
+  .daxi-recent,
+  .daxi-history-panel,
+  .synthesis-form,
+  .result-section,
+  .profile-card,
+  .admin-panel {
+    padding: 1rem;
+  }
+
+  .clone-audio-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .clone-item {
+    grid-template-columns: 2.35rem minmax(0, 1fr) auto;
+  }
+
+  .clone-delete {
+    grid-column: 2 / -1;
+    justify-self: start;
+  }
+
+  .daxi-voice-option {
+    padding: 0.7rem;
+  }
+
+  .daxi-settings label {
+    grid-template-columns: 42px 48px minmax(0, 1fr);
+  }
+
+  .daxi-text-footer {
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+
+  .daxi-history-search {
+    width: 100%;
+    max-width: none;
+  }
+
+  .daxi-history-filters {
+    width: 100%;
+  }
+
+  .admin-table-wrap {
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .admin-table {
+    min-width: 680px;
+  }
+
+  .jobs-table {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .daxi-dashboard,
+  .daxi-history,
+  .clone-page,
+  .daxi-synth,
+  .admin-page,
+  .profile-container,
+  .register-container {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .daxi-dashboard h1,
+  .daxi-history h1,
+  .daxi-synth h1,
+  .clone-hero h1 {
+    font-size: 1.7rem;
+  }
+
+  .daxi-recent-item {
+    grid-template-columns: 2rem minmax(0, 1fr);
+  }
+
+  .daxi-job-status {
+    display: none;
+  }
+
+  .register-row {
+    grid-template-columns: 1fr;
+  }
+}

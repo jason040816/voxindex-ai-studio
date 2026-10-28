@@ -1,0 +1,95 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+.venv_dl/
+env/
+venv/
+
+# Node
+node_modules/
+frontend/node_modules/
+
+# Virtualenvs
+.vscode/
+.idea/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+.env.prod
+.env.docker
+!.env.*.example
+
+# Build / distribution
+dist/
+build/
+*.egg-info/
+.pytest_cache/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Model & checkpoints (do NOT commit large model files)
+checkpoints/
+**/checkpoints/
+**/.ipynb_checkpoints/
+*.safetensors
+*.pth
+*.pt
+*.bin
+*.t7
+
+# Storage outputs and uploads (runtime)
+/storage/
+/output/
+**/output/
+*.db
+*.sqlite
+*.sqlite3
+warmup_silence.wav
+
+# Local tooling and patch archives
+**/.playwright-cli/
+/oss-backup-patch-*/
+/oss-v4-patch-stage-*/
+/voxindex-oss-*.zip
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.env
+venv/
+.venv/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+
+# Node
+node_modules/
+dist/
+.env
+
+# Storage (keep structure but not files)
+storage/voice_refs/*
+storage/outputs/*
+!storage/voice_refs/.gitkeep
+!storage/outputs/.gitkeep
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db

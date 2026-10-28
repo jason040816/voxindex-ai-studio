@@ -1,0 +1,66 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  min-height: 72px;
+  padding: 0 32px;
+  background: rgba(255, 255, 255, 0.94);
+  border-bottom: 1px solid #e4effa;
+  box-shadow: 0 6px 24px rgba(31, 96, 160, 0.08);
+  backdrop-filter: blur(16px);
+}
+
+/* The landing-page navigation floats over the artwork instead of forming a white bar. */
+.navbar-home {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+.navbar-brand { display: inline-flex; align-items: center; gap: 12px; color: #12345b; text-decoration: none; white-space: nowrap; }
+.navbar-logo { display: block; height: 38px; object-fit: contain; }
+.navbar-logo-tech { width: 114px; }
+.navbar-logo-cloud { width: 96px; height: 34px; }
+.navbar-brand-divider { width: 1px; height: 34px; flex: 0 0 1px; background: #cbd6e4; }
+
+.navbar-links { display: flex; align-items: center; gap: 1.35rem; margin-left: auto; }
+.navbar-links a, .navbar-link-btn { color: #536a83; font-size: 0.92rem; font-weight: 600; text-decoration: none; }
+.navbar-links a:hover, .navbar-link-btn:hover { color: #126dca; text-decoration: none; }
+.navbar-links a.navbar-credits { padding: 0.48rem 0.78rem; border: 1px solid #cfe5fa; border-radius: 999px; color: #126dca; background: #f1f8ff; white-space: nowrap; }
+.navbar-links a.navbar-credits:hover { background: #e5f2ff; }
+.navbar-link-btn, .language-toggle { border: 0; background: transparent; cursor: pointer; }
+.navbar-login { color: #126dca !important; }
+.navbar-register { padding: 0.55rem 1rem; border-radius: 999px; color: #fff !important; background: linear-gradient(135deg, #1685ec, #2c63d9); box-shadow: 0 7px 18px rgba(22, 133, 236, 0.2); }
+.language-toggle { min-width: 42px; padding: 0.42rem 0.65rem; border: 1px solid #cfe2f5; border-radius: 999px; color: #126dca; font-weight: 800; }
+.language-toggle:hover { background: #eff7ff; }
+
+.navbar-profile { position: relative; margin-left: 0.2rem; }
+.profile-avatar { width: 38px; height: 38px; padding: 0; border: 2px solid #c7e3fb; border-radius: 50%; overflow: hidden; cursor: pointer; background: #fff; }
+.profile-avatar img { width: 100%; height: 100%; object-fit: cover; }
+.profile-dropdown { position: absolute; top: calc(100% + 12px); right: 0; min-width: 230px; padding: 1rem; background: #fff; border: 1px solid #dcecf9; border-radius: 16px; box-shadow: 0 18px 40px rgba(31, 96, 160, 0.16); }
+.dropdown-header { display: flex; align-items: center; gap: 0.7rem; }
+.dropdown-avatar { width: 40px; height: 40px; border-radius: 50%; }
+.dropdown-name { color: #173b65; font-weight: 800; }
+.dropdown-email { color: #7990a8; font-size: 0.78rem; }
+.dropdown-divider { height: 1px; margin: 0.8rem 0; background: #e7f0f8; }
+.dropdown-item { display: block; width: 100%; padding: 0.55rem 0.3rem; border: 0; border-radius: 8px; color: #365875; background: transparent; text-align: left; cursor: pointer; text-decoration: none; }
+.dropdown-item:hover { background: #f0f7ff; color: #126dca; }
+
+@media (max-width: 780px) {
+  .navbar { padding: 0 16px; gap: 0.8rem; }
+  .navbar-links { gap: 0.65rem; }
+  .navbar-links a, .navbar-link-btn { font-size: 0.78rem; }
+  .navbar-brand { gap: 7px; }
+  .navbar-logo-tech { width: 88px; height: 30px; }
+  .navbar-logo-cloud { width: 74px; height: 26px; }
+  .navbar-brand-divider { height: 27px; }
+}

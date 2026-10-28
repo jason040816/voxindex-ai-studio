@@ -1,0 +1,97 @@
+.daxi-synth {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 14px;
+  width: 100%;
+  max-width: 1440px;
+  min-width: 0;
+  min-height: 0;
+  margin: 0 auto;
+  color: #203754;
+}
+.daxi-synth-hero { display: flex; flex: 0 0 auto; align-items: center; justify-content: space-between; gap: 18px; min-height: 58px; }
+.daxi-synth-hero h1 { margin: 0; color: #173b65; font-size: 24px; line-height: 1.2; }
+.daxi-synth-hero p { margin: 6px 0 0; color: #788ba4; font-size: 13px; line-height: 1.5; }
+.daxi-synth-link { display: inline-flex; flex: 0 0 auto; align-items: center; gap: 8px; min-height: 38px; padding: 0 13px; border: 1px solid #d7e9f8; border-radius: 9px; color: #2679d4; background: #f7fbff; font-size: 12px; font-weight: 700; text-decoration: none; }
+.daxi-synth-link:hover { border-color: #add1f2; background: #eef7ff; text-decoration: none; }
+.daxi-alert { flex: 0 0 auto; padding: 9px 12px; border-radius: 9px; font-size: 12px; line-height: 1.45; }
+.daxi-alert-error { color: #a83246; background: #fff1f3; border: 1px solid #f0c4cb; }
+.daxi-synth-grid { display: grid; flex: 1; grid-template-columns: minmax(235px, .9fr) minmax(330px, 1.25fr) minmax(230px, .85fr); gap: 14px; min-height: 0; margin: 0; }
+.daxi-card { display: flex; flex-direction: column; min-width: 0; min-height: 0; overflow: hidden; padding: 17px; border: 1px solid #dceaf7; border-radius: 15px; background: #fff; box-shadow: 0 10px 28px rgba(45,106,162,.07); }
+.daxi-card-heading { display: flex; flex: 0 0 auto; align-items: flex-start; gap: 10px; margin-bottom: 13px; }
+.daxi-step { display: grid; flex: 0 0 auto; place-items: center; width: 29px; height: 29px; border-radius: 9px; color: #1685ec; background: #e8f4ff; font-size: 11px; font-weight: 800; }
+.daxi-card-heading h2 { margin: 1px 0 0; color: #173b65; font-size: 16px; line-height: 1.35; }
+.daxi-card-heading p { margin: 4px 0 0; color: #7891a9; font-size: 11px; line-height: 1.45; }
+.daxi-voice-list { display: grid; align-content: start; gap: 8px; min-height: 0; overflow: auto; padding-right: 3px; scrollbar-width: thin; }
+.daxi-voice-option { display: grid; grid-template-columns: 35px minmax(0,1fr) 18px; gap: 9px; align-items: center; width: 100%; min-height: 57px; padding: 8px; border: 1px solid #e2edf7; border-radius: 10px; color: #315879; background: #fbfdff; text-align: left; cursor: pointer; transition: border-color .15s ease,background .15s ease,box-shadow .15s ease; }
+.daxi-voice-option:hover { border-color: #a9cff1; background: #f6fbff; }
+.daxi-voice-option.is-active { border-color: #7db7ef; background: #f0f8ff; box-shadow: 0 0 0 2px rgba(57,136,239,.08); }
+.daxi-voice-avatar { display: grid; place-items: center; width: 35px; height: 35px; border-radius: 10px; color: #2681df; background: #e8f4ff; font-size: 14px; font-weight: 750; }
+.daxi-voice-copy { display: grid; gap: 3px; min-width: 0; }
+.daxi-voice-copy strong { overflow: hidden; color: #294d70; font-size: 12px; text-overflow: ellipsis; white-space: nowrap; }
+.daxi-voice-copy small { overflow: hidden; color: #8298ad; font-size: 10px; line-height: 1.35; text-overflow: ellipsis; }
+.daxi-voice-check { color: #2681df; font-weight: 800; text-align: center; }
+.daxi-loading { display: grid; flex: 1; min-height: 120px; place-items: center; border: 1px dashed #d2e3f2; border-radius: 11px; color: #8197ad; font-size: 12px; }
+.daxi-text-card textarea { flex: 1; width: 100%; min-height: 140px; box-sizing: border-box; resize: none; padding: 11px 12px; border: 1px solid #d4e5f4; border-radius: 10px; outline: 0; color: #274b6d; background: #f8fbff; font: inherit; font-size: 13px; line-height: 1.65; }
+.daxi-text-card textarea:focus,.daxi-audio-name-field input:focus { border-color: #78b4f2; box-shadow: 0 0 0 3px rgba(57,136,239,.1); }
+.daxi-text-card textarea::placeholder { color: #a3b4c5; }
+.daxi-audio-name-field { display: grid; flex: 0 0 auto; gap: 5px; margin-top: 9px; color: #58738d; font-size: 11px; font-weight: 700; }
+.daxi-audio-name-field input { width: 100%; min-height: 35px; box-sizing: border-box; padding: 7px 9px; border: 1px solid #d6e7f4; border-radius: 9px; outline: none; color: #244968; background: #fbfdff; font: inherit; font-size: 12px; font-weight: 400; }
+.daxi-text-footer { display: flex; flex: 0 0 auto; align-items: center; justify-content: space-between; gap: 8px; margin: 7px 0 9px; color: #8b9eb1; font-size: 10px; }
+.daxi-text-footer button { padding: 0; border: 0; color: #287ed6; background: transparent; font: inherit; font-size: 10px; font-weight: 700; cursor: pointer; }
+.daxi-settings { display: grid; flex: 0 0 auto; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 9px; padding: 10px; border: 1px solid #e3edf6; border-radius: 10px; background: #fbfdff; }
+.daxi-settings label { display: grid; grid-template-columns: 1fr auto; gap: 6px; color: #617b94; font-size: 10px; font-weight: 650; }
+.daxi-settings strong { color: #287ed6; font-size: 10px; }
+.daxi-settings input { grid-column: 1 / -1; width: 100%; height: 4px; margin: 2px 0; accent-color: #3988ef; cursor: pointer; }
+.daxi-result-card { gap: 0; }
+.daxi-result-empty { display: grid; flex: 1; align-content: center; justify-items: center; min-height: 150px; padding: 16px; border: 1px dashed #d2e3f2; border-radius: 11px; color: #8197ad; text-align: center; }
+.daxi-result-empty > span { color: #5aa6ec; font-size: 28px; }
+.daxi-result-empty strong { margin-top: 5px; color: #315879; font-size: 13px; }
+.daxi-result-empty p { max-width: 210px; margin: 5px 0 0; font-size: 11px; line-height: 1.5; }
+.daxi-audio-result { display: grid; flex: 1; align-content: center; justify-items: center; gap: 9px; min-height: 0; padding: 15px; border: 1px solid #dceaf7; border-radius: 11px; background: #fafdff; text-align: center; }
+.daxi-result-icon { display: grid; place-items: center; width: 42px; height: 42px; border-radius: 14px; color: #287ed6; background: #e9f5ff; font-size: 21px; }
+.daxi-audio-result strong { color: #294d70; font-size: 13px; }
+.daxi-audio-result > span { color: #8298ad; font-size: 10px; }
+.daxi-audio-result audio { width: 100%; height: 38px; }
+.daxi-download { display: block; width: 100%; box-sizing: border-box; padding: 8px 10px; border: 1px solid #d5e8f8; border-radius: 8px; color: #2778d5; background: #f3f9ff; font-size: 11px; font-weight: 700; text-align: center; text-decoration: none; }
+.daxi-download:hover { background: #e9f4ff; text-decoration: none; }
+.daxi-generate { display: flex; flex: 0 0 auto; align-items: center; justify-content: center; gap: 8px; min-height: 40px; margin-top: 12px; padding: 0 12px; border: 0; border-radius: 9px; color: #fff; background: #3988ef; box-shadow: 0 5px 14px rgba(57,136,239,.17); font: inherit; font-size: 12px; font-weight: 700; cursor: pointer; transition: background .15s ease,transform .15s ease; }
+.daxi-generate:hover:not(:disabled) { background: #2879dd; transform: translateY(-1px); }
+.daxi-generate:disabled { opacity: .58; cursor: not-allowed; }
+.daxi-cost-note { flex: 0 0 auto; margin: 7px 0 0; color: #879bb0; font-size: 10px; line-height: 1.45; text-align: center; }
+
+@media (max-height: 760px) and (min-width: 1081px) {
+  .daxi-synth { gap: 9px; }
+  .daxi-synth-hero { min-height: 46px; }
+  .daxi-synth-hero p { margin-top: 3px; }
+  .daxi-card { padding: 13px; }
+  .daxi-card-heading { margin-bottom: 8px; }
+  .daxi-text-card textarea { min-height: 90px; }
+  .daxi-settings { padding: 7px; }
+}
+@media (max-width: 1080px) {
+  .daxi-synth-grid { grid-template-columns: minmax(220px,.85fr) minmax(300px,1.15fr); overflow-y: auto; padding-right: 3px; }
+  .daxi-result-card { grid-column: 1 / -1; display: grid; grid-template-columns: minmax(0,1fr) minmax(200px,.7fr); align-items: center; gap: 0 14px; }
+  .daxi-result-card .daxi-card-heading { grid-column: 1 / -1; }
+  .daxi-result-card .daxi-result-empty,.daxi-result-card .daxi-audio-result { min-height: 120px; }
+  .daxi-result-card .daxi-generate { margin-top: 0; }
+  .daxi-result-card .daxi-cost-note { grid-column: 2; }
+}
+@media (max-width: 680px) {
+  .daxi-synth { min-height: calc(100dvh - 108px); }
+  .daxi-synth-hero { align-items: flex-start; flex-direction: column; gap: 10px; }
+  .daxi-synth-hero h1 { font-size: 21px; }
+  .daxi-synth-grid { flex: 0 0 auto; grid-template-columns: 1fr; overflow: visible; padding: 0; }
+  .daxi-card { min-height: 220px; }
+  .daxi-text-card { min-height: 410px; }
+  .daxi-text-card textarea { min-height: 135px; }
+  .daxi-result-card { grid-column: auto; display: flex; }
+  .daxi-result-card .daxi-generate { margin-top: 12px; }
+  .daxi-result-card .daxi-cost-note { margin-top: 7px; }
+}
+@media (max-width: 420px) {
+  .daxi-settings { grid-template-columns: 1fr; }
+  .daxi-settings label { grid-template-columns: 1fr auto; }
+}
+@media (prefers-reduced-motion: reduce) { .daxi-voice-option,.daxi-generate { transition: none; } }

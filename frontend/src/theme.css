@@ -1,0 +1,42 @@
+:root {
+  --background-dark: #f4f8fd;
+  --background-light: #ffffff;
+  --surface: #ffffff;
+  --primary: #3988ef;
+  --primary-hover: #2879dd;
+  --text-primary: #203754;
+  --text-secondary: #788ba4;
+  --border: #e2eaf4;
+  --error: #d9485f;
+  --success: #18895b;
+  --daxi-canvas: #f4f8fd;
+  --daxi-surface: #ffffff;
+  --daxi-blue: #3988ef;
+  --daxi-blue-hover: #2879dd;
+  --daxi-ink: #203754;
+  --daxi-muted: #788ba4;
+  --daxi-border: #e2eaf4;
+  --daxi-radius: 14px;
+  --daxi-shadow: 0 12px 34px rgba(42, 78, 122, .09);
+}
+
+body { background: #f4f8fd !important; color: var(--text-primary) !important; }
+.page-container { color: var(--text-primary); }
+.page-container h1 { color: #173b65 !important; }
+.auth-container, .register-container { background: #f4f8fd !important; }
+.auth-card, .register-content, .synthesis-form, .result-section, .recent-section, .history-item, .dashboard-card { background: rgba(255,255,255,0.92) !important; border-color: var(--border) !important; box-shadow: 0 18px 48px rgba(48, 116, 174, 0.1) !important; }
+.auth-card h2, .register-content h1, .auth-card p, .register-subtitle { color: #173b65 !important; }
+.form-group label, .settings-subtitle, .settings-hint, .history-text, .dashboard-card p { color: #6d879f !important; }
+.form-group input[type="text"], .form-group input[type="email"], .form-group input[type="password"], .form-group textarea, .form-group select { background: #f8fbff !important; color: #173b65 !important; border-color: #cfe3f4 !important; }
+.btn-primary, .btn-login, .btn-register { background: #3988ef !important; box-shadow: 0 6px 15px rgba(57, 136, 239, 0.17); }
+.dashboard-card h3, .download-btn, .forgot-password a, .accent { color: #1685ec !important; }
+.admin-shell { background: #f3f8fd !important; border-color: #dcecf9 !important; }
+.admin-hero-card, .admin-panel { background: #fff !important; border-color: #dcecf9 !important; box-shadow: 0 16px 42px rgba(48, 116, 174, 0.1) !important; }
+.admin-hero-copy h2, .admin-panel-header h2, .admin-hero-value span:first-child, .admin-user-meta strong, .admin-table th, .admin-table td { color: #173b65 !important; }
+.admin-hero-copy p, .admin-panel-header span, .admin-user-meta span, .admin-chart-y-axis, .admin-chart-labels, .admin-summary-label, .admin-chart-summary-grid span { color: #7892aa !important; }
+.admin-tabs { background: #eaf4fc !important; }
+.admin-tab { color: #55718c !important; }
+.admin-tab.active { background: #1685ec !important; color: white !important; }
+.admin-growth-line { stroke: #1685ec !important; }
+.admin-growth-area { fill: rgba(22, 133, 236, 0.16) !important; }
+.admin-chart-grid { stroke: #d9eaf8 !important; }
